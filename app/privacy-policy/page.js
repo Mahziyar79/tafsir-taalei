@@ -2,50 +2,58 @@ const PrivacyPolicy = () => {
   return (
     <section>
       <h1 className="text-3xl mb-4 text-center font-bold">Privacy Policy</h1>
-      <p className="text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla
-      malesuada pellentesque. Nunc pulvinar sapien et ligula ullamcorper
-      malesuada. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Eu
-      augue ut lectus arcu bibendum at varius. Velit scelerisque in dictum non
-      consectetur a erat. Orci a scelerisque purus semper eget duis at tellus.
-      Urna nunc id cursus metus aliquam eleifend. Pellentesque nec nam aliquam
-      sem et tortor. Pellentesque id nibh tortor id aliquet lectus proin nibh
-      nisl. Molestie a iaculis at erat pellentesque adipiscing. Tortor aliquam
-      nulla facilisi cras fermentum. Risus feugiat in ante metus dictum. Ipsum a
-      arcu cursus vitae congue mauris rhoncus. In hac habitasse platea dictumst
-      quisque sagittis purus sit. Enim facilisis gravida neque convallis a cras
-      semper. Nunc vel risus commodo viverra. Purus in massa tempor nec feugiat
-      nisl pretium fusce id. Ornare massa eget egestas purus viverra. Nisl
-      pretium fusce id velit ut tortor. Morbi tristique senectus et netus et
-      malesuada fames. Eu sem integer vitae justo eget. Et magnis dis parturient
-      montes nascetur. Massa id neque aliquam vestibulum morbi blandit cursus.
-      Egestas tellus rutrum tellus pellentesque eu tincidunt. Consectetur lorem
-      donec massa sapien faucibus et molestie. A lacus vestibulum sed arcu non
-      odio euismod. Vitae aliquet nec ullamcorper sit amet risus nullam eget.
-      Eget nunc lobortis mattis aliquam faucibus purus in massa. Ullamcorper
-      velit sed ullamcorper morbi tincidunt. Ultrices in iaculis nunc sed augue.
-      Ut ornare lectus sit amet. Scelerisque eleifend donec pretium vulputate.
-      Pulvinar sapien et ligula ullamcorper malesuada. Fringilla ut morbi
-      tincidunt augue interdum velit euismod in. Sed tempus urna et pharetra
-      pharetra massa massa ultricies. Adipiscing elit duis tristique
-      sollicitudin nibh sit amet commodo nulla. Ut diam quam nulla porttitor
-      massa id neque aliquam vestibulum. Convallis convallis tellus id interdum.
-      Quis hendrerit dolor magna eget. Ullamcorper eget nulla facilisi etiam
-      dignissim diam quis enim. Quis hendrerit dolor magna eget est lorem.
-      Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. In
-      hendrerit gravida rutrum quisque non tellus orci. Nam at lectus urna duis
-      convallis. Feugiat sed lectus vestibulum mattis ullamcorper velit sed
-      ullamcorper morbi. Viverra orci sagittis eu volutpat odio. Sed viverra
-      ipsum nunc aliquet. At in tellus integer feugiat scelerisque. Vitae proin
-      sagittis nisl rhoncus mattis rhoncus urna neque. Ultrices tincidunt arcu
-      non sodales. Libero volutpat sed cras ornare arcu dui vivamus arcu felis.
-      Varius vel pharetra vel turpis. Quis auctor elit sed vulputate mi sit.
-      Sagittis eu volutpat odio facilisis mauris. In mollis nunc sed id semper
-      risus in hendrerit. Tortor condimentum lacinia quis vel. Mi eget mauris
-      pharetra et. Imperdiet sed euismod nisi porta lorem mollis aliquam ut.
-      Laoreet sit amet cursus sit amet dictum sit amet.
-    </p>
+      <p className="text-justify mb-2">
+        Taalei edu built the Quran Tafsir app as a Free app. This SERVICE is
+        provided by Taalei edu at no cost and is intended for use as is.
+      </p>
+      <p className="text-justify mb-2">
+        This page is used to inform visitors regarding our policies with the
+        collection, use, and disclosure of Personal Information if anyone
+        decided to use our Service.
+      </p>
+      <p className="text-justify mb-2">
+        If you choose to use our Service, then you agree to the collection and
+        use of information in relation to this policy.
+      </p>
+      <p className="text-justify mb-2">
+        The terms used in this Privacy Policy have the same meanings as in our
+        Terms and Conditions, which is accessible at Quran Tafsir app unless
+        otherwise defined in this Privacy Policy.
+      </p>
+      <h3 className="text-lg md:text-2xl mt-10 mb-4 font-bold">
+        Information Collection and Use
+      </h3>
+      <p className="text-justify mb-2">
+        <span className="font-bold">
+          At this step we do not collect any data from you and your device.
+        </span>{" "}
+        In case of any changes in the app, this content will be updated.
+      </p>
+      <h3 className="text-lg md:text-2xl mt-10 mb-4 font-bold">Security</h3>
+      <p className="text-justify mb-2">
+        As we do not collect any data, there is no concerns here and this app is
+        in the most secure state as it can be.
+      </p>
+      <h3 className="text-lg md:text-2xl mt-10 mb-4 font-bold">
+        Links to Other Sites
+      </h3>
+      <p className="text-justify mb-2">
+        This Service contain links to app main web site.
+      </p>
+      <h3 className="text-lg md:text-2xl mt-10 mb-4 font-bold">
+        Changes to This Privacy Policy
+      </h3>
+      <p className="text-justify mb-2">
+        We may update our Privacy Policy from time to time. Thus, you are
+        advised to review this page periodically for any changes. We will notify
+        you of any changes by posting the new Privacy Policy on this page. These
+        changes are effective immediately after they are posted on this page.
+      </p>
+      <h3 className="text-lg md:text-2xl mt-10 mb-4 font-bold">Contact Us</h3>
+      <p className="text-justify mb-2">
+        If you have any questions or suggestions about our Privacy Policy, do
+        not hesitate to contact us.
+      </p>
     </section>
   );
 };
