@@ -36,9 +36,8 @@ const UserForm = () => {
         body: JSON.stringify(formData),
       });
       if (response.ok) {
-        console.log("Email sent successfully");
-        setMessage("Message sent successfully!");
-        setFormData({ subject: "", email: "" });
+        setMessage("Email sent successfully!");
+        setFormData({ subject: "", email: "", description:"" });
       } else {
         setMessage("Failed to send email");
         console.error("Failed to send email");
