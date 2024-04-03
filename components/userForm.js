@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const UserForm = () => {
-  const [formData, setFormData] = useState({ subject: "", email: "" });
+  const [formData, setFormData] = useState({ subject: "", email: "", description : "" });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -56,12 +56,12 @@ const UserForm = () => {
       <h2 className="text-2xl font-bold mt-9 mb-3">Contact Us</h2>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col md:flex-row items-center gap-5"
+        className="flex flex-col md:flex-row md:flex-wrap items-center gap-5"
       >
         <input
           type="text"
           name="subject"
-          className="bg-[#f3f3f3] rounded-md border-none p-2 w-full md:w-1/3"
+          className="bg-[#f3f3f3] rounded-md border-none p-2 w-full md:w-[49%]"
           placeholder="Your Subject"
           value={formData.subject}
           onChange={handleChange}
@@ -70,14 +70,22 @@ const UserForm = () => {
         <input
           type="email"
           name="email"
-          className="bg-[#f3f3f3] rounded-md border-none p-2 w-full md:w-1/3"
+          className="bg-[#f3f3f3] rounded-md border-none p-2 w-full md:w-[49%]"
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
           required
         />
+        <textarea
+          name="description"
+          className="bg-[#f3f3f3] rounded-md border-none p-2 w-full"
+          placeholder="Description"
+          value={formData.description}
+          onChange={handleChange}
+          required
+        />
         <button
-          className="bg-[#1E3A8A] rounded-md text-white p-2 w-full md:w-1/3"
+          className="bg-[#1E3A8A] rounded-md text-white p-2 w-full"
           type="submit"
         >
           Submit
