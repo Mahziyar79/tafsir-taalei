@@ -4,6 +4,7 @@ import React, { useState } from "react";
 const UserForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +27,7 @@ const UserForm = () => {
     }
 
     try {
+      setLoading(true);
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
@@ -44,6 +46,8 @@ const UserForm = () => {
     } catch (error) {
       setMessage("Error sending email");
       console.error("Error sending email:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -79,6 +83,7 @@ const UserForm = () => {
           Submit
         </button>
       </form>
+      {loading ? <p className="mt-1">Sending...</p> : null}
       <p className="mt-1">{message}</p>
     </>
   );
