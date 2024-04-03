@@ -73,7 +73,7 @@ const UserForm = () => {
           required
         />
         <button
-          className="bg-[#1E3A8A] rounded-md text-white p-2 w-1/3"
+          className="bg-[#1E3A8A] rounded-md text-white p-2 w-full md:w-1/3"
           type="submit"
         >
           Submit
