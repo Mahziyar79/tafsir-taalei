@@ -19,7 +19,7 @@ export async function POST(req, res) {
     try {
       const info = await transporter.sendMail({
         from: "mgillanpour79@gmail.com",
-        to: "real.products.apps@gmail.com",
+        to: "real.products.apps@gmail.com, mgillanpour79@gmail.com",
         subject: "New Contact Form Submission (tafsir-taalei)",
         html: `<p>Name: ${name}</p><p>Email: ${email}</p>`,
       });
