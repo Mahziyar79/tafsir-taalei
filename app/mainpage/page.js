@@ -1,5 +1,6 @@
-'use client'
+"use client";
 import HomeBanner from "@/components/HomeBanner";
+import UserForm from "@/components/userForm";
 // import { useRouter } from "next/navigation";
 // import { useEffect } from "react";
 
@@ -8,6 +9,11 @@ const MainPage = () => {
   // useEffect(() => {
   //   router.replace("https://google.com");
   // }, [router]);
-  return <HomeBanner />;
+  return (
+    <>
+      <HomeBanner />
+      <UserForm />
+    </>
+  );
 };
 export default MainPage;
