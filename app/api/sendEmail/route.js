@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export async function POST(req, res) {
   if (req.method === "POST") {
     const requestData = await req.json();
-    const { name, email } = requestData;
+    const { subject, email } = requestData;
     // Use nodemailer to send the email
     const transporter = nodemailer.createTransport({
       // Configure your email provider here
@@ -21,7 +21,7 @@ export async function POST(req, res) {
         from: "mgillanpour79@gmail.com",
         to: "real.products.apps@gmail.com, mgillanpour79@gmail.com",
         subject: "New Contact Form Submission (tafsir-taalei)",
-        html: `<p>Name: ${name}</p><p>Email: ${email}</p>`,
+        html: `<p>Subject: ${subject}</p><p>Email: ${email}</p>`,
       });
 
       console.log("Email sent: ", info.response);

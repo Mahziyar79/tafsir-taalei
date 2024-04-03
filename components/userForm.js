@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const UserForm = () => {
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [formData, setFormData] = useState({ subject: "", email: "" });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -13,9 +13,9 @@ const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate name and email fields
-    if (!formData.name || !formData.email) {
-      console.error("Name and email are required");
+    // Validate subject and email fields
+    if (!formData.subject || !formData.email) {
+      console.error("Subject and email are required");
       return;
     }
 
@@ -38,7 +38,7 @@ const UserForm = () => {
       if (response.ok) {
         console.log("Email sent successfully");
         setMessage("Message sent successfully!");
-        setFormData({ name: "", email: "" });
+        setFormData({ subject: "", email: "" });
       } else {
         setMessage("Failed to send email");
         console.error("Failed to send email");
@@ -60,10 +60,10 @@ const UserForm = () => {
       >
         <input
           type="text"
-          name="name"
+          name="subject"
           className="bg-[#f3f3f3] rounded-md border-none p-2 w-full md:w-1/3"
-          placeholder="Your Name"
-          value={formData.name}
+          placeholder="Your Subject"
+          value={formData.subject}
           onChange={handleChange}
           required
         />
